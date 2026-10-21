@@ -1,5 +1,12 @@
 # Enterprise Procure-to-Pay (P2P) Process Optimization: APQC-Aligned BPMN, Python Process Mining, and Tableau BI Dashboard
 
+[![Status](https://img.shields.io/badge/Status-In_Progress_(Learning)-orange?style=for-the-badge&logo=github)](https://github.com/)
+[![Python](https://img.shields.io/badge/Python-3.12%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![PM4Py](https://img.shields.io/badge/Process_Mining-pm4py-green?style=for-the-badge&logo=diagramsdotnet&logoColor=white)](https://pm4py.fit.fraunhofer.de/)
+[![Framework](https://img.shields.io/badge/Framework-APQC_PCF_v8.0-lightgrey?style=for-the-badge&logo=apache)](https://www.apqc.org/)
+[![Visualization](https://img.shields.io/badge/Dashboard-AI_Generated_(Tableau_Upcoming)-purple?style=for-the-badge&logo=tableau&logoColor=white)](https://www.tableau.com/)
+
+
 Hey there! 👋 This repository captures my learning project exploring the end-to-end Procure-to-Pay (P2P) lifecycle. As someone looking to bridge the gap between business operations and data science (especially tailored for the Indian GCC and shared services space), I built this sandbox to practice process mining, SOP governance, and spend analytics from scratch.
 
 This isn't a real enterprise deployment—it's a hands-on learning project where I combined traditional process frameworks with Python and AI-assisted tooling.
