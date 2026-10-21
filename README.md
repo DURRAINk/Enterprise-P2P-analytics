@@ -22,7 +22,8 @@ The project is split into two main parts: a process mining pipeline built on cus
 
  * **Synthetic Event Log**: Since clean enterprise event logs are hard to find publicly, I wrote a Python script to generate a custom 10000-case dataset with 25+ granular system headers (Case_ID, Match_Status, timestamps, etc.).
 
- * **Process Mining (pm4py)**: I used Python's pm4py library to turn the event log into a Directly-Follows Graph (DFG), discover BPMN models, and uncover where operational bottlenecks happen (like exception-handling queues).
+ * **Process Mining (pm4py)**: I used Python's pm4py library to turn the event log into a Directly-Follows Graph (DFG), discover BPMN models.
+ * **Bottleneck Analysis**: Scripts/Pipelines to uncover where operational bottlenecks happen (like exception-handling queues).
 
 2. Spend & Supplier Performance Analysis (Kaggle Dataset & SOP 2)
  * To practice macro-level analytics, I used the "Purchase Orders & Supplier Performance Dataset" from Kaggle.
@@ -36,22 +37,23 @@ Enterprise-P2P-Analytics/
 │
 ├── data/
 │   ├── Dataset_Procurement.xlsx   #Ready made data from Kaggle
-│   ├── p2p_event_log.csv   #synthetic event logs generated
-│   └── p2p_transaction_table  #synthetic complete p2p transaction data
+│   ├── p2p_event_log.csv          #synthetic event logs generated
+│   └── p2p_transaction_table      #synthetic complete p2p transaction data
 │
 ├── dashboards/
-│   └── p2p_overview       # Ai generated Dashboard
+│   └── p2p_overview       # P2P Dashboard using AI
 │
 ├── documents/
-│   ├── process_mining/  # contains diagrams
+│   ├── process_mining/    # contains diagrams
 │   ├── apqc_pcf_bpmn.png  # BPMN diagram created using Lucidchart
-│   ├── sop_1.md   # APQC PCF Style SOP
-│   └── sop_2.md   # Mixed APQC PCF and Kaggle Dataset
+│   ├── sop_1.md           # APQC PCF Style SOP
+│   └── sop_2.md           # Mixed APQC PCF and Kaggle Dataset
 │
 ├── notebooks/
 │   ├── p2p_analytics.ipynb  # Analytics on Synthetic Data
 │   ├── data_auditing.ipynb  # Kaggle dataset Auditing
-│   └── synthetic.py      # Synthecic data generation script
+│   ├── bn.py                # Bottleneck anlaysis script
+│   └── synthetic.py         # Synthecic data generation script
 │
 ├── README.md
 └── requirements.txt
@@ -82,6 +84,9 @@ Since this is an ongoing learning project, here are a few things I plan to exper
 
 ## Project Gallery
 
+### BPMN
+![bpmn](documents/apqc_pcf_bpmn.png)
+
 ### Process mining diagrams
 
 1. **DGF**
@@ -89,5 +94,11 @@ Since this is an ongoing learning project, here are a few things I plan to exper
 
 2. **Petri Net**
 ![petri_net](documents/process_mining/petri_net.png)
+
+### Process Time Distribution for identifying Bottlenecks
+![time_distri](documents/process_mining/time_bn.png)
+
+### Procurement Dashboard
+![proc](dashboards/p2p_pic.png)
 
 ## Thank You!
